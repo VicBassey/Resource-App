@@ -79,9 +79,16 @@
     align-items: center;
 }
 
+
 .name-of-website i{
     cursor: pointer;
     color: #8f8f95;
+}
+
+.icondiv{
+  display:flex;
+  flex-direction:row;
+  column-gap:1rem;
 }
 
 .name-of-website a{
@@ -221,8 +228,42 @@ textarea{
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px){
-    .first-section {
+.hidden {
+    display: none;
+}
 
+@media screen and (max-width: 600px){
+    .resources-section{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 1rem;
     }
+
+.resource{display: block;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.create-button-box button{
+    background-color: #4c48f8;
+    color: white;
+    padding: 0.8rem 0.4rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.modal{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    width: 80%;
+}
+
+
 }
